@@ -4,10 +4,7 @@ import { RegisterScreen } from "./RegisterScreen";
 import { AccountSettingsScreen } from "./AccountSettingsScreen";
 import { LoginScreen } from "./LoginScreen";
 
-
-const PURPLE = "#6C38CC";
-const PURPLE_LIGHT = "#EDE8FA";
-const PURPLE_DARK = "#4E259E";
+ 
 
 const styles = {
   app: {
@@ -41,9 +38,7 @@ interface LoginCredentials {
   password: string;
 }
 
-interface AccountSettingsProps {
-  user: User | null;  // ← must allow null since initial state is null
-}
+ 
 
 export default function App() {
   const [screen, setScreen] = useState("welcome"); // welcome | register | login | settings
