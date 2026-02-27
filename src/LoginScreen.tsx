@@ -7,10 +7,7 @@ interface LoginCredentials {
   email: string;
   password: string;
 }
- interface User {
-  fullName: string;
-  email: string;
-}
+ 
 interface loginProps{
     onSubmit:(creds:LoginCredentials)=>void,
     onBack:()=>void
